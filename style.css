@@ -14,17 +14,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   height: 100vh;
 
-    /*novo*/
-    /*padding: 20px 0px 20px 0px;*/
-    /*height: auto;*/
+    
+
+    /*novo
+    padding: 20px 0px 20px 0px;
+    height: auto;*/
 
 
 }
 
 .container {
-    width: 80%;
+    height: 95vh !important;
+    width: 100%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     background-color: white;
@@ -34,8 +37,6 @@ body {
     overflow: hidden;
     overflow-y: scroll;
     height: auto;
-
-
 
 
 }
@@ -208,17 +209,17 @@ h4 {
 
 @media (max-width: 760px) {
 
+
     #menu-list {
 
         position: relative;
         top: 70px;
         left: 60px;
-
-        overflow: hidden;
-
+        display: none;
+        transition: 0.7s linear;
     }
 
-    .container {
+    .container { 
         border-radius: 0 0 0 0;
         height: 100%;
         width: 100%;
@@ -246,6 +247,7 @@ h4 {
 
     .menu-icon {
         display: block;
+        cursor: pointer;
 
     }
 

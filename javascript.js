@@ -1,11 +1,17 @@
-/*
-const menulist = document.getElementById("menu-list")
-menulist.style.maxHeight = "0px"
+const menuicon = document.querySelector(".menu-icon")
+let menulist = document.querySelector("#menu-list")
 
-function showMenu(){
-    if(menulist.style.maxHeight =="0px"){
-        menulist.style.maxHeight ="1000px"
-    } else{
-        menulist.style.maxHeight = "0px"
+console.log(menulist)
+
+menuicon.addEventListener("click", eventbutton)
+
+function eventbutton() {
+    if (menulist.style.display === "none") {
+
+        menulist.style.display = "block"
+
+    } else {
+        menulist.style.display = "none"
     }
-}*/
+
+}
